@@ -1,0 +1,16 @@
+<a href="/dashboard">&larr; Back</a>
+<div class="admin-title">
+    <h1 style="width: 80%; text-align: center;">Add new post</h1>
+</div>
+<form action="/delete-post/<%= data._id %>?_method=DELETE" method="POST">
+    <input type="submit" value="Delete" class="btn-delete btn">
+</form>
+
+<form action="/edit-post/<%= data._id %>?_method=PUT" method="post">
+    <label for="title"><b>Title</b></label>
+    <input type="text" placeholder="Enter title" name="title" value="<%= data.title %>">
+
+    <label for="Content"><b>Content</b></label>
+    <textarea name="body" id="" cols="30" rows="10"><%= data.body %></textarea>
+    <input type="submit" value="Edit" class="btn">
+</form>

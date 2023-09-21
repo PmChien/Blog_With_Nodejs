@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
+
+:root{
+    --black : #1c1c1c;
+    --gray : #7E7E7E;
+    --gray-light : #E4E4E4;
+    --red : #b30000;
+    --font-size-base: 1rem;/* thuong bang 16px */
+    --font-size-medium: clamp(1.25rem,0.61vw+1.1rem,1.58rem);
+    --font-size-lg: clamp(1.56rem,1vw+1.31rem,2.11rem);
+    --font-size-xl: clamp(2.44rem,2.38vw+1.85rem,3.75rem);
+    --border-radius :10px
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--black);
+    font-size: var(--font-size-base);
+    /* background-color:#FAF5EE; */
+    background-image: url('/img/img-noise-361x370.png');
+}
